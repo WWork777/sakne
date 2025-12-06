@@ -1,0 +1,5 @@
+.slick-dots button::before{
+   color: black !important;
+   margin-top: 10px !important;
+   font-size: 10px !important;
+}
