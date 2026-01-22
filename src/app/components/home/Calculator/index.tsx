@@ -460,6 +460,7 @@ export default function OutsourcingCalculator() {
                 </label>
                 <select
                   value={postsPerWeek}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   onChange={(e) => setPostsPerWeek(e.target.value as any)}
                   className="w-full p-4 border border-secondary/20 dark:border-white/20 rounded-2xl bg-white dark:bg-lightgray/10 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition text-secondary dark:text-white appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAuNjY2Njg3IDIuNjY2NjdMNS45OTk5NSA4LjAwMDAxTDEwLjY2NjcgMi42NjY2NyIgc3Ryb2tlPSIjMUYyQTJFIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+')] bg-[right_1rem_center] bg-no-repeat"
                   disabled={!isSmmNeeded}
@@ -488,6 +489,7 @@ export default function OutsourcingCalculator() {
                 </label>
                 <select
                   value={socialNetworks}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   onChange={(e) => setSocialNetworks(e.target.value as any)}
                   className="w-full p-4 border border-secondary/20 dark:border-white/20 rounded-2xl bg-white dark:bg-lightgray/10 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition text-secondary dark:text-white appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAuNjY2Njg3IDIuNjY2NjdMNS45OTk5NSA4LjAwMDAxTDEwLjY2NjcgMi42NjY2NyIgc3Ryb2tlPSIjMUYyQTJFIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+')] bg-[right_1rem_center] bg-no-repeat"
                   disabled={!isSmmNeeded}

@@ -12,7 +12,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 
 function Pricing() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [pricingData, setPricingData] = useState<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [itOutSource, setItOutSource] = useState<any>(null);
   const [mounted, setMounted] = useState(false);
 
@@ -106,8 +108,9 @@ function Pricing() {
                   </div>
                 </div>
               </div>
-
+              
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-7">
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                 {pricingData?.data?.map((value: any, index: any) => {
                   return (
                     <div
@@ -152,6 +155,7 @@ function Pricing() {
                         <div>
                           <ul className="flex flex-col gap-3">
                             {value?.planIncludes?.map(
+                              // eslint-disable-next-line @typescript-eslint/no-explicit-any
                               (value: any, index: any) => {
                                 return (
                                   <li
@@ -276,6 +280,7 @@ function Pricing() {
               {itOutSource?.data && itOutSource.data.length > 0 && (
                 <div className="slider-container">
                   <Slider {...sliderSettings}>
+                    {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                     {itOutSource?.data?.map((value: any, index: any) => (
                       <div key={index} className="px-2 h-full">
                         {" "}
@@ -328,6 +333,7 @@ function Pricing() {
                               <div>
                                 <ul className="flex flex-col gap-3">
                                   {value?.planIncludes?.map(
+                                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                     (value: any, index: any) => (
                                       <li
                                         key={index}
@@ -389,6 +395,7 @@ function Pricing() {
                 blurBorders={false}
               >
                 {(pricingData?.partnerLogo || []).map(
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   (items: any, index: any) => (
                     <Logoslider key={index} logo={items} />
                   )
